@@ -1,16 +1,16 @@
 const paths = {
   home() {
-    return '/';
+    return "/";
   },
-  topicShow(topicSlug: string){
+  topicShow(topicSlug: string) {
     return `/topics/${topicSlug}`;
   },
-  postCreate(topicSlug: string){
+  postCreate(topicSlug: string) {
     return `/topics/${topicSlug}/posts/new`;
   },
-  postShow(topicSlug: string, postId: string){
-    return `/topics/ ${topicSlug}/posts/${postId}`;
-  }
+  postShow(topicSlug: string, postId: string) {
+    return `/topics/${topicSlug}/posts/${postId}`;
+  },
 };
 
 export default paths;

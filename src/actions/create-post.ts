@@ -7,7 +7,7 @@ import { redirect } from "next/navigation";
 import { z } from "zod";
 import { db } from "@/db";
 import paths from "@/paths";
-import { error } from "console";
+
 
 const createPostSchema = z.object({
   title: z.string().min(3),
