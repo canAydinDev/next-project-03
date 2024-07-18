@@ -10,7 +10,7 @@ export default async function PostShow({ postId }: PostShowProps) {
     where: { id: postId },
   });
 
-  if(!post) {
+  if (!post) {
     notFound();
   }
 
